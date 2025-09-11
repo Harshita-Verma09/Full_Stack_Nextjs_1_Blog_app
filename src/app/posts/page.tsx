@@ -17,6 +17,7 @@ interface Post {
   author: { id: string; name: string };
 }
 
+
 export default function PostsPage() {
   const [posts, setPosts] = useState<Post[]>([]);
   const [loading, setLoading] = useState(false);

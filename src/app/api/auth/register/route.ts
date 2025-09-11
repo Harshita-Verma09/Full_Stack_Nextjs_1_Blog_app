@@ -27,7 +27,7 @@ export async function POST(req: Request) {
     });
 
     return NextResponse.json({ id: user.id, email: user.email });
-  } catch (err: any) {
+  } catch (err:  unknown) {
     console.error("Registration error:", err);
     return NextResponse.json(
       { error: "Something went wrong" },
@@ -35,3 +35,4 @@ export async function POST(req: Request) {
     );
   }
 }
+

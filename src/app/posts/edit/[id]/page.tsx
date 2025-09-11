@@ -10,6 +10,7 @@ export default function EditPostPage() {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
 
+  
   useEffect(() => {
     fetch(`/api/posts/${params.id}`, {
       headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },

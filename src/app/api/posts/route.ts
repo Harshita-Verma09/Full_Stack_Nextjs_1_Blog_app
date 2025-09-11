@@ -1,5 +1,3 @@
-//3_blog_app\src\app\api\posts\route.ts
-
 import { prisma } from "@/lib/prisma";
 import { NextResponse } from "next/server";
 import { getUserFromRequest } from "@/lib/getUserFromToken";
@@ -12,7 +10,7 @@ const postSchema = z.object({
   comments: z
     .array(
       z.object({
-        text: z.string().min(0),
+        text: z.string().optional(),
       })
     )
     .optional(),
@@ -53,7 +51,7 @@ export async function POST(req: Request) {
       comments: comments
         ? {
             create: comments.map((c) => ({
-              text: c.text,
+              text: c.text || "",
               userId: user.id,
             })),
           }
@@ -64,8 +62,3 @@ export async function POST(req: Request) {
 
   return NextResponse.json(post, { status: 201 });
 }
-
-
-
-
-
