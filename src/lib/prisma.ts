@@ -1,0 +1,14 @@
+import { PrismaClient } from "@prisma/client";
+
+declare global {
+  // For Next.js hot-reloading, prevent multiple instances of Prisma Client
+  var prisma: PrismaClient | undefined;
+}
+
+export const prisma =
+  global.prisma ??
+  new PrismaClient({
+    log: ["query", "info", "warn", "error"], // optional logging
+  });
+
+if (process.env.NODE_ENV !== "production") global.prisma = prisma;
