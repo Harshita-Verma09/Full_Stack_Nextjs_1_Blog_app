@@ -1,5 +1,5 @@
 import { prisma } from "@/lib/prisma";
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { getUserFromRequest } from "@/lib/getUserFromToken";
 import { z } from "zod";
 
@@ -26,20 +26,19 @@ export async function GET() {
 }
 
 // POST /api/posts
-export async function POST(req: Request) {
+
+export async function POST(req: NextRequest) {
   const user = await getUserFromRequest(req);
-  if (!user) {
+  if (!user)
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-  }
 
   const body = await req.json();
   const parsed = postSchema.safeParse(body);
-  if (!parsed.success) {
+  if (!parsed.success)
     return NextResponse.json(
       { error: parsed.error.issues.map((e) => e.message).join(", ") },
       { status: 400 }
     );
-  }
 
   const { title, content, comments } = parsed.data;
 
