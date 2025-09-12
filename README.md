@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Blog App
+
+A full-stack blog application built with [Next.js](https://nextjs.org), Prisma, and PostgreSQL.
+
+## 🚀 Live Demo
+
+Check out the deployed app:  
+[full-stack-nextjs-1-blog-i868tqy0h.vercel.app](https://full-stack-nextjs-1-blog-i868tqy0h.vercel.app)
+
+## Features
+
+- User authentication (login required for creating, updating, or deleting posts)
+- CRUD operations for blog posts
+- Commenting system
+- RESTful API routes
+- Prisma ORM for database access
+- Responsive UI
 
 ## Getting Started
 
-First, run the development server:
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+2. **Set up environment variables:**
+   - Create a `.env` file based on `.env.example`
+   - Configure your database connection string
+
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open [http://localhost:3000](http://localhost:3000) in your browser.**
+
+## API Usage Example
+
+### Login
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+curl -X POST https://full-stack-nextjs-1-blog-i868tqy0h.vercel.app/api/auth/login \
+  -H "Content-Type: application/json" \
+  -d '{"email":"user@example.com","password":"yourpassword"}'
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Response:**
+```json
+{
+  "token": "your-jwt-token"
+}
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Get a Post
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+curl https://full-stack-nextjs-1-blog-i868tqy0h.vercel.app/api/posts/POST_ID
+```
+
+### Update a Post
+
+```bash
+curl -X PUT https://full-stack-nextjs-1-blog-i868tqy0h.vercel.app/api/posts/POST_ID \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer YOUR_JWT_TOKEN" \
+  -d '{"title":"Updated Title","content":"Updated content"}'
+```
+
+### Delete a Post
+
+```bash
+curl -X DELETE https://full-stack-nextjs-1-blog-i868tqy0h.vercel.app/api/posts/POST_ID \
+  -H "Authorization: Bearer YOUR_JWT_TOKEN"
+```
+
+## Folder Structure
+
+- `src/app/api/posts/[id]/route.ts` – API routes for posts
+- `src/app/login/page.tsx` – Login page
+- `src/lib/prisma.ts` – Prisma client
+- `prisma/schema.prisma` – Database schema
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Prisma Documentation](https://www.prisma.io/docs)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
