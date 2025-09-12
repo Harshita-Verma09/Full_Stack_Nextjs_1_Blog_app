@@ -1,6 +1,6 @@
 # Next.js Blog App
 
-A full-stack blog application built with [Next.js](https://nextjs.org), Prisma, and MongoDB.
+A full-stack blog application built with [Next.js](https://nextjs.org), Prisma, and Mongodb.
 
 ##  Live Demo
 
