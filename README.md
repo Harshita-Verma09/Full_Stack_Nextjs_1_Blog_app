@@ -1,22 +1,30 @@
 # Next.js Blog App
 
-A full-stack blog application built with [Next.js](https://nextjs.org), Prisma, and Mongodb.
+A full-stack blog application built with modern technologies.
 
 ##  Live Demo
 
-Check out the deployed app:  
+Visit the deployed app:  
 [full-stack-nextjs-1-blog-i868tqy0h.vercel.app](https://full-stack-nextjs-1-blog-i868tqy0h.vercel.app)
 
-## Features
+## 🛠 Tech Stack
+
+- **Next.js** – React framework for server-side rendering and routing
+- **TypeScript** – Type-safe JavaScript
+- **MongoDB** – NoSQL database
+- **Prisma** – ORM for database access
+- **Zod** – TypeScript-first schema validation
+
+##  Features
 
 - User authentication (login required for creating, updating, or deleting posts)
 - CRUD operations for blog posts
 - Commenting system
 - RESTful API routes
-- Prisma ORM for database access
+- Form validation with Zod
 - Responsive UI
 
-## Getting Started
+##  Getting Started
 
 1. **Install dependencies:**
    ```bash
@@ -25,7 +33,7 @@ Check out the deployed app:
 
 2. **Set up environment variables:**
    - Create a `.env` file based on `.env.example`
-   - Configure your database connection string
+   - Add your MongoDB connection string and other secrets
 
 3. **Run the development server:**
    ```bash
@@ -34,7 +42,7 @@ Check out the deployed app:
 
 4. **Open [http://localhost:3000](http://localhost:3000) in your browser.**
 
-## API Usage Example
+## Example Usage
 
 ### Login
 
@@ -73,15 +81,16 @@ curl -X DELETE https://full-stack-nextjs-1-blog-i868tqy0h.vercel.app/api/posts/P
   -H "Authorization: Bearer YOUR_JWT_TOKEN"
 ```
 
-## Folder Structure
+##  Folder Structure
 
 - `src/app/api/posts/[id]/route.ts` – API routes for posts
 - `src/app/login/page.tsx` – Login page
 - `src/lib/prisma.ts` – Prisma client
 - `prisma/schema.prisma` – Database schema
 
-## Learn More
+##  Learn More
 
 - [Next.js Documentation](https://nextjs.org/docs)
 - [Prisma Documentation](https://www.prisma.io/docs)
-
+- [MongoDB Documentation](https://www.mongodb.com/docs/)
+- [Zod Documentation](https://zod.dev/)
