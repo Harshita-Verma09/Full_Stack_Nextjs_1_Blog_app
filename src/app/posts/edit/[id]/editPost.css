@@ -78,3 +78,20 @@
 .edit-btn:active {
   transform: translateY(0);
 }
+
+
+.back-btn {
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background-color: #e0e0e0;
+}

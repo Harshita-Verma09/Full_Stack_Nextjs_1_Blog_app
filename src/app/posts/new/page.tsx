@@ -1,3 +1,6 @@
+
+
+
 "use client";
 
 import { useState } from "react";
@@ -43,6 +46,11 @@ export default function NewPostPage() {
 
   return (
     <div className="new-wrapper">
+      {/* Back Button */}
+      <button className="back-btn" onClick={() => router.push("/posts")}>
+        ← Back to Posts
+      </button>
+
       <h1 className="new-title">Create New Post</h1>
       <form onSubmit={handleSubmit} className="new-form">
         <input

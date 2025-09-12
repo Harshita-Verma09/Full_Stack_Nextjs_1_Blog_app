@@ -1,0 +1,69 @@
+/* Wrapper */
+.post-detail-wrapper {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Back Button */
+.back-btn {
+  background-color: #a6a4a4;
+  color: #333;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.back-btn:hover {
+  background-color: #e0e0e0;
+}
+
+/* Card */
+.post-detail-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Title */
+.post-detail-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+/* Author */
+.post-detail-author {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Content */
+.post-detail-content {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+  white-space: pre-line; /* preserve line breaks */
+}
+
+/* Loading/Error */
+.loading-text,
+.error-text {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #777;
+  margin-top: 50px;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

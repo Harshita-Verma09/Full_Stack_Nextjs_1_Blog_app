@@ -1,3 +1,5 @@
+//3_blog_app\src\app\posts\edit\[id]\page.tsx
+
 "use client";
 
 import { useState, useEffect } from "react";
@@ -10,7 +12,6 @@ export default function EditPostPage() {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
 
-  
   useEffect(() => {
     fetch(`/api/posts/${params.id}`, {
       headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
@@ -42,6 +43,14 @@ export default function EditPostPage() {
 
   return (
     <div className="edit-wrapper">
+      {/* Back Button */}
+      <button
+        className="back-btn"
+        onClick={() => router.push("/posts")}
+      >
+        ← Back to Posts
+      </button>
+
       <h1 className="edit-title">Edit Post</h1>
       <form onSubmit={handleSubmit} className="edit-form">
         <input

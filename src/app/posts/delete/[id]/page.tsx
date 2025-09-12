@@ -1,3 +1,6 @@
+
+//3_blog_app\src\app\posts\delete\[id]\page.tsx
+
 "use client";
 
 import { useEffect, useState } from "react";
