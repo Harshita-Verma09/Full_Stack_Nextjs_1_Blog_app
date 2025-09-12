@@ -7,7 +7,7 @@ A full-stack blog application built with modern technologies.
 Visit the deployed app:  
 [full-stack-nextjs-1-blog-i868tqy0h.vercel.app](https://full-stack-nextjs-1-blog-i868tqy0h.vercel.app)
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **Next.js** – React framework for server-side rendering and routing
 - **TypeScript** – Type-safe JavaScript
