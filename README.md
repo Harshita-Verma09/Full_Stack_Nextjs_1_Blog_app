@@ -2,7 +2,7 @@
 
 A full-stack blog application built with [Next.js](https://nextjs.org), Prisma, and PostgreSQL.
 
-## 🚀 Live Demo
+##  Live Demo
 
 Check out the deployed app:  
 [full-stack-nextjs-1-blog-i868tqy0h.vercel.app](https://full-stack-nextjs-1-blog-i868tqy0h.vercel.app)
