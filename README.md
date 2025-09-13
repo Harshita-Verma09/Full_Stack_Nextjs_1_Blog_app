@@ -8,13 +8,14 @@ Visit the deployed app:
 [full-stack-nextjs-1-blog-i868tqy0h.vercel.app](https://full-stack-nextjs-1-blog-i868tqy0h.vercel.app)
 
 
-## Tech Stack
+## Tech Stack  
 
-- **Next.js** – React framework for server-side rendering and routing
-- **TypeScript** – Type-safe JavaScript
-- **MongoDB** – NoSQL database
-- **Prisma** – ORM for database access
-- **Zod** – TypeScript-first schema validation
+- ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)  
+- ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)  
+- ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)  
+- ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)  
+- ![Zod](https://img.shields.io/badge/Zod-3068B7?style=for-the-badge&logo=react&logoColor=white)
+
 
 ##  Features
 
