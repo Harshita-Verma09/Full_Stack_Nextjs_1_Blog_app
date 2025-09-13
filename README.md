@@ -2,6 +2,7 @@
 
 A full-stack blog application built with modern technologies.
 
+
 ##  Live Demo
 
 Visit the deployed app:  
