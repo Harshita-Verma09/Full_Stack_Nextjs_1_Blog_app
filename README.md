@@ -16,7 +16,8 @@ Visit the deployed app:
 - ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)  
 - ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)  
 - ![Zod](https://img.shields.io/badge/Zod-3068B7?style=for-the-badge&logo=react&logoColor=white)
-- 
+  
+
 
 
 ##  Features
