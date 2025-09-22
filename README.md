@@ -95,6 +95,7 @@ curl -X DELETE https://full-stack-nextjs-1-blog-i868tqy0h.vercel.app/api/posts/P
 - `src/lib/prisma.ts` – Prisma client
 - `prisma/schema.prisma` – Database schema
 
+
 ##  Learn More
 
 - [Next.js Documentation](https://nextjs.org/docs)
