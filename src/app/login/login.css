@@ -1,4 +1,4 @@
-/* Background */
+
 .login-container {
   min-height: 100vh;
   display: flex;
@@ -10,7 +10,7 @@
   padding: 20px;
 }
 
-/* Card */
+
 .login-form {
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(12px);
@@ -25,7 +25,7 @@
   animation: fadeInUp 1s ease;
 }
 
-/* Title */
+
 .login-title {
   font-size: 2rem;
   font-weight: 700;
@@ -35,7 +35,6 @@
   letter-spacing: 1px;
 }
 
-/* Inputs */
 .login-form input {
   padding: 14px 16px;
   border: none;
@@ -51,7 +50,6 @@
   box-shadow: 0 0 0 3px rgba(37, 117, 252, 0.4);
 }
 
-/* Password Field */
 .password-field {
   position: relative;
   display: flex;
@@ -102,7 +100,6 @@
   box-shadow: none;
 }
 
-/* Animation */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -114,7 +111,6 @@
   }
 }
 
-/* Responsive */
 @media (max-width: 500px) {
   .login-form {
     padding: 30px 20px;
