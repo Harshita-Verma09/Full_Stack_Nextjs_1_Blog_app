@@ -8,7 +8,7 @@ Visit the deployed app:
 [full-stack-nextjs-1-blog-i868tqy0h.vercel.app](https://full-stack-nextjs-1-blog-i868tqy0h.vercel.app)
 
 
-## Tech Stack  
+## Tech Stack 
 
 
 
