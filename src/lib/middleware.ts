@@ -10,5 +10,5 @@ export async function requireAuth(req: NextRequest) {
   const decoded = jwt.verify(token, process.env.JWT_SECRET!);
   if (!decoded || typeof decoded === "string") throw new Error("Unauthorized");
 
-  return decoded; // user object (id, email)
+  return decoded; 
 }
