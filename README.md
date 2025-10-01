@@ -66,6 +66,7 @@ curl -X POST https://full-stack-nextjs-1-blog-i868tqy0h.vercel.app/api/auth/logi
 }
 ```
 
+
 ### Get a Post
 
 ```bash
