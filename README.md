@@ -12,6 +12,7 @@ Visit the deployed app:
 
 
 
+
 - ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)  
 - ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)  
 - ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)  
@@ -67,6 +68,7 @@ curl -X POST https://full-stack-nextjs-1-blog-i868tqy0h.vercel.app/api/auth/logi
 ```
 
 
+
 ### Get a Post
 
 ```bash
@@ -90,6 +92,7 @@ curl -X DELETE https://full-stack-nextjs-1-blog-i868tqy0h.vercel.app/api/posts/P
 ```
 
 ##  Folder Structure
+
 
 - `src/app/api/posts/[id]/route.ts` – API routes for posts
 - `src/app/login/page.tsx` – Login page
