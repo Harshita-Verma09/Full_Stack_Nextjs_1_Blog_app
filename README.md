@@ -1,6 +1,6 @@
 # Next.js Blog App
 
-A full-stack blog application built with modern technologies Authentication + Create  Blog.
+A full-stack blog application built with modern technologies Authentication and Create  Blog.
 
 ##  Live Demo
 
